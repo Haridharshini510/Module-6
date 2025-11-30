@@ -25,7 +25,25 @@ To write a Python program that demonstrates **operator overloading** by overload
 ---
 
 ## 💻 Program
+```
+class Marks:
+    def __init__(self, mark):
+        self.mark = mark
 
+    def __lt__(self, other):
+        return self.mark < other.mark
+
+obj1 = Marks(20)
+obj2 = Marks(10)
+
+if obj1 < obj2:
+    print("True")
+else:
+    print("False")
+
+```
 ## Output
+<img width="354" height="180" alt="image" src="https://github.com/user-attachments/assets/fac88112-086d-454f-be1f-1be2067873e0" />
 
 ## Result
+Thus, the program is executed successfully, demonstrating operator overloading by customizing the behavior of the less than (<) operator for the Marks class.
